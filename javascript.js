@@ -25,9 +25,8 @@ function displayMovies(movies){
         div.className = "pupa"
 
         div.innerHTML = `
-            <h3><a href="https://vidfast.net/movie/${movie.id}">${movie.title}<a/></h3>
-            <img src="${poster}" />
-            <p>${movie.release_date}</p>
+            <h3><a href="https://vidfast.net/movie/${movie.id}">${movie.title}</a></h3>
+            <img src="${poster}"/>
         `;
 
         results.appendChild(div);
