@@ -1,5 +1,15 @@
 const API = "2678343f7f72fb5cc6edb88c868ab822"
 
+var input = document.getElementById('film')
+
+input.addEventListener("keypress", function(event){
+    if (event.key === "Enter"){
+        event.preventDefault();
+        document.getElementById("baton").click();
+    }
+})
+
+
 async function szuk(){
     const query = document.getElementById("film").value;
 
